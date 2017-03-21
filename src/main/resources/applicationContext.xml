@@ -57,7 +57,7 @@
 	</bean>
 	 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-  		<property name="basePackage" value="com.website.dao" />
+  		<property name="basePackage" value="com.job.dao" />
 	</bean>
 
 </beans>

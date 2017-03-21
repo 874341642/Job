@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="GBK"?>
 <something-else-entirely>
     <proxool>
-        <alias>websitedatabase</alias>   
-      	<driver-url>jdbc:mariadb://192.168.3.100:3306/website</driver-url>         
+        <alias>jobdatabase</alias>   
+      	<driver-url>jdbc:mariadb://192.168.3.100:3306/job</driver-url>         
         <driver-class>org.mariadb.jdbc.Driver</driver-class>
         <driver-properties>
  		    <property name="user" value="root"/>
