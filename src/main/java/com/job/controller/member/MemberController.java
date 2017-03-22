@@ -33,6 +33,7 @@ public class MemberController {
 		String account=memberService.getMemberAccountById(id);
 		System.out.println(account);
 		System.out.println(account);
+		System.out.println(account);
 	}
 	
 	@ResponseBody
