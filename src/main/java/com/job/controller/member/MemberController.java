@@ -32,6 +32,7 @@ public class MemberController {
 		Long id=1L;
 		String account=memberService.getMemberAccountById(id);
 		System.out.println(account);
+		System.out.println(account);
 	}
 	
 	@ResponseBody
