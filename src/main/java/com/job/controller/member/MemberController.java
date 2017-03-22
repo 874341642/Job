@@ -34,6 +34,7 @@ public class MemberController {
 		System.out.println(account);
 		System.out.println(account);
 		System.out.println(account);
+		System.out.println(account);
 	}
 	
 	@ResponseBody
