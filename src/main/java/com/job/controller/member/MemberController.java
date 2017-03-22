@@ -20,9 +20,10 @@ public class MemberController {
 
 	@Resource
 	private MemberService memberService;
+	
 	@Resource
 	private SmsService smsService;
-	
+	 
 	
 	@ResponseBody
 	@RequestMapping("/getmemberinfo")
