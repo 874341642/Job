@@ -13,48 +13,44 @@ import com.job.entity.publics.SmsEntity;
 import com.job.service.member.MemberService;
 import com.job.service.publics.SmsService;
 
-@Controller  
+@Controller
 @Scope("prototype")
 @RequestMapping("/member")
 public class MemberController {
 
 	@Resource
 	private MemberService memberService;
-	
+
 	@Resource
 	private SmsService smsService;
-	 
-	
+
 	@ResponseBody
 	@RequestMapping("/getmemberinfo")
-	public void getMemberInfo()
-	{
-		Long id=1L;
-		String account=memberService.getMemberAccountById(id);		
+	public void getMemberInfo() {
+		Long id = 1L;
+		String account = memberService.getMemberAccountById(id);
 	}
-	
+
 	@ResponseBody
 	@RequestMapping("/getsmsinfo")
-	public String getSmsInfo(Long id)
-	{		
-		SmsEntity sms=smsService.getSmsById(id);
-		String resultStr=JSONObject.toJSONString(sms);
+	public String getSmsInfo(Long id) {
+		SmsEntity sms = smsService.getSmsById(id);
+		String resultStr = JSONObject.toJSONString(sms);
 		System.out.println(resultStr);
 		return resultStr;
 	}
-	
+
 	@ResponseBody
 	@RequestMapping("/addsms")
-	public void addSmsInfo()
-	{		
-		SmsEntity smsEntity=new SmsEntity();
+	public void addSmsInfo() {
+		SmsEntity smsEntity = new SmsEntity();
 		smsEntity.setContent("您的验证码为:888888,请保管好!");
 		smsEntity.setContent("info");
 		smsEntity.setMobile("18807605300");
 		smsEntity.setStatus(1);
 		smsEntity.setStatusNote("短信发送成功！");
 		System.out.println(JdbcType.TIMESTAMP);
-		smsService.insertSms(smsEntity);			
+		smsService.insertSms(smsEntity);
 	}
-	
+
 }
