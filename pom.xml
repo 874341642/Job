@@ -21,6 +21,7 @@
 		<mybatis>3.4.1</mybatis>
 		<proxool>0.9.1</proxool>
 		<mariadb>1.5.8</mariadb>
+		<mysql>5.1.6</mysql>
 	</properties>
 
 	<!-- 项目依赖 -->
@@ -177,6 +178,12 @@
     		<groupId>org.mariadb.jdbc</groupId>
     		<artifactId>mariadb-java-client</artifactId>
     		<version>${mariadb}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>${mysql}</version>
 		</dependency>	
 		
 		<dependency>
